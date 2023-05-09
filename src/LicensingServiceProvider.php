@@ -7,7 +7,9 @@ class LicensingServiceProvider extends ServiceProvider
 {
     public function boot()
     {
-        checker()->get($_SERVER['HTTP_HOST']);
+        $domain = parse_url(url('/'), PHP_URL_HOST);
+
+        checker()->get($domain;
     }
 
     public function register()
