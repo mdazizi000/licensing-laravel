@@ -10,7 +10,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Mhmdazizi000\\Licensing\\": "src/"
+            "Packages\\Licensing\\": "src/"
         },
         "files": [
             "./src/Helper/helper.php"
@@ -20,7 +20,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Mhmdazizi000\\Licensing\\LicensingServiceProvider"
+                "Packages\\Licensing\\LicensingServiceProvider"
             ]
         }
     }
