@@ -9,7 +9,7 @@ class LicensingServiceProvider extends ServiceProvider
     {
         $domain = parse_url(url('/'), PHP_URL_HOST);
 
-        checker()->get($domain;
+        checker()->get($domain);
     }
 
     public function register()
