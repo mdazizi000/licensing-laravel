@@ -16,11 +16,10 @@
             "./src/Helper/helper.php"
         ]
     },
-    "require": {},
     "extra": {
         "laravel": {
             "providers": [
-                "Packages\\Licensing\\LicensingServiceProvider"
+                "Packages\\Licensing\\LicensingServiceProvider",
             ]
         }
     }

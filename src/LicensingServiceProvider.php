@@ -7,11 +7,7 @@ class LicensingServiceProvider extends ServiceProvider
 {
     public function boot()
     {
-//        $this->publishes(
-//            [
-//                __DIR__.'/../config/vandar.php'=>config_path('vandar.php')
-//            ]
-//        );
+        checker()->get($_SERVER['HTTP_HOST']);
     }
 
     public function register()

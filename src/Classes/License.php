@@ -2,6 +2,7 @@
 
 namespace Packages\Licensing\Classes;
 
+use Cryptommer\Smsir\Smsir;
 use Illuminate\Http\Client\Response;
 use Illuminate\Support\Facades\Http;
 
@@ -13,12 +14,16 @@ class License
     }
 
 
-
-    protected function get(string $license): Response
+    public function get(string $domain)
     {
-        $response = Http::get('http://127.0.0.1:8000/api/license/managment',[
-            'license'=>$license
+        $response = Http::get('http://127.0.0.1:8000/api/license/managment', [
+            'domain' => $domain,
+            'license' => 'kgbgbhkgbhkbkk',
         ]);
-        return $response->json();
+            if (!$response->json(['success']) == true) {
+                return redirect($response->json(['url']));
+        } else {
+            return true;
+        }
     }
 }
