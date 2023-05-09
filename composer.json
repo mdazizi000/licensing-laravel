@@ -13,7 +13,7 @@
             "Packages\\Licensing\\": "src/"
         },
         "files": [
-            "./src/Helper/helper.php"
+            "./src/helper/helper.php"
         ]
     },
     "extra": {

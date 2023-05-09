@@ -21,7 +21,7 @@ class License
             'license' => 'kgbgbhkgbhkbkk',
         ]);
             if (!$response->json(['success']) == true) {
-                return redirect($response->json(['url']));
+                return view('welcome');
         } else {
             return true;
         }
