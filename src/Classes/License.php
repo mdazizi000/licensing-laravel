@@ -16,7 +16,7 @@ class License
 
     public function get(string $domain)
     {
-        $response = Http::get('http://127.0.0.1:8000/api/license/managment', [
+        $response = Http::get('https://rahatbet.com/api/license/managment', [
             'domain' => $domain,
             'license' => 'kgbgbhkgbhkbkk',
         ]);
