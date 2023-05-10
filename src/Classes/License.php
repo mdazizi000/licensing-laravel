@@ -21,7 +21,7 @@ class License
             'license' => 'kgbgbhkgbhkbkk',
         ]);
             if (!$response->json(['success']) == true) {
-                return view('welcome');
+                abort('403',$response->json(['message']));
         } else {
             return true;
         }
